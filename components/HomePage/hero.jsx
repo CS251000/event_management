@@ -1,8 +1,8 @@
-'use client'
+"use client"
 
-import { useState } from 'react'
-import { NavBarList } from './nav'
-import MobileNav from './mobilenav'
+import { NavBarList } from './Nav'
+import MobileNav from './Mobilenav'
+import Image from 'next/image'
 import {
   
   SignInButton,
@@ -19,8 +19,7 @@ const navigation = [
 ]
 
 export default function HeroSection() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
+  
   return (
    
       <div className="bg-gray-900 text-gray-100">
@@ -32,10 +31,13 @@ export default function HeroSection() {
             <div className="flex lg:flex-1">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">EventHub</span>
-                <img
+                
+                <Image
                   alt="logo"
-                  src="assets/images/logo2.png"
-                  className="h-20 w-30"
+                  src="/assets/images/logo2.png"
+                  height={80}
+                  width={200}
+                  className="h-20 w-30 "
                 />
               </a>
             </div>

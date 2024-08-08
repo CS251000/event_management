@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 import { Bars3Icon, ArrowLeftIcon } from "@heroicons/react/24/outline";
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
