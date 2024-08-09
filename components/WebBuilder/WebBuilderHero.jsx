@@ -1,8 +1,8 @@
 "use client"
 
+import { NavBarList } from '../HomePage/ Nav'
+import MobileNav from '../HomePage/Mobilenav'
 import Link from 'next/link'
-import { NavBarList } from './ Nav'
-import MobileNav from './Mobilenav'
 import {
   
   SignInButton,
@@ -18,7 +18,7 @@ const navigation = [
   { name: 'Company', href: '#' },
 ]
 
-export default function HeroSection() {
+export default function BuilderHero() {
   
   return (
    
@@ -29,7 +29,7 @@ export default function HeroSection() {
                 <MobileNav/>
               </div>
             <div className="flex lg:flex-1">
-              <Link href={'/'}>
+            <Link href={'/'}>
               <span  className="-m-1.5 p-1.5">
                 <span className="sr-only">EventHub</span>
                 <img
@@ -74,26 +74,27 @@ export default function HeroSection() {
             />
           </div>
           <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-            <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+            {/* <div className="hidden sm:mb-8 sm:flex sm:justify-center">
               <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-indigo-400 ring-1 ring-gray-100/10 hover:ring-gray-100/20">
                 All in one event-management software.
               </div>
-            </div>
+            </div> */}
             <div className="text-center">
               <h1 className="text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl">
-                Built for the Events of Today
+                Your Event Needs a Website...Lets Make One
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-400">
               Transform your event planning experience with our intuitive platform. Easily manage every aspect of your events, from initial setup to seamless execution, ensuring every detail is perfectly organized and executed.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
-                {/* <a
-                  href="#"
+                <Link href={'/webbuild/builder'}>
+                <span
+                  
                   className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Get started
-                </a> */}
-                <span  className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                </span></Link>
+                <span href="#" className="text-sm font-semibold leading-6 text-gray-100">
                   Learn more <span aria-hidden="true">→</span>
                 </span>
               </div>

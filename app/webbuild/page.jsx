@@ -1,13 +1,11 @@
 "use client";
-import React from 'react'
-import { Button } from '@headlessui/react';
-import Link from 'next/link';
-export default function WebBuilder() {
+import BuilderHero from "../../components/WebBuilder/WebBuilderHero"
+import FeatureSection from "../../components/WebBuilder/Features"
+export default function WebBuilderMain() {
   return (
     <div>
-      <Link href={'/webbuild/builder'}>
-      <Button>BUILDER</Button></Link>
-        
+      <BuilderHero/>
+      <FeatureSection/>
       
     </div>
   )
